@@ -1,0 +1,41 @@
+﻿@model WebApplication4.Models.Department
+@{
+    ViewData["Title"] = "Department Create";
+}
+
+
+
+<form asp-action="Create" method="post">
+
+    <div class="row">
+
+
+        <div class="col-sm-3">
+        </div>
+        <div class="col-sm-5">
+            <h3>CREATE Department</h3>
+
+       
+
+            <div class="form-group">
+                <label class="control-label">Depatment Name</label>
+                <input asp-for="DepartmentName" class="form-control" />
+            </div>
+
+            <div class="form-group">
+                <label class="control-label">Department Acronym</label>
+                <input asp-for="DepartmentAcronym" class="form-control" />
+            </div>
+
+            
+
+            <br />
+            <div class="form-group float-right">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </div>
+        <div class="col-sm-3">
+        </div>
+    </div>
+
+</form>
